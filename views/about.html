@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockup</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles-about.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+   <div class="header">
+    <header>
+        <a href="../views/index.html" class="logo"><img src="../img/TechMi x Guevara.png" alt=""></a>
+        <ul>
+            <li><a href="../views/about.html" class="btn">Sobre nosotros</a></li>
+            <li><a href="../views/mis_notas.html" class="btn">Mis notas</a></li>
+            <li><a href="#"><i class="fa-regular fa-bell"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-gear"></i></a></li>
+            <li><a href="../views/login.html"><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+    </header>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+   </div>
+   <section class="home">
+    <div class="home-content">
+        <div class="info">
+            <h3>Colegio Dr. Ernesto Guevara</h3>
+            <h1>Tecnicatura en Informática</h1>
+            <h3><span>Profesional y Personal</span></h3>
+            <p>Colegio especializado en la formación de estudiantes orientados al mundo informatico del presente y del futuro.</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com/cpdeg_tecnica/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/colegioguevara/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://maps.app.goo.gl/trN1HqeEqFVZayp79"><i class="fa-solid fa-location-dot"></i></a>
+                <a href="https://www.youtube.com/@colegioprovincialdrernesto1731"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="home-img">
+            <img src="../img/logo guevara.png" alt="Logo del Colegio Guevara">
+        </div>
+    </div>
+</section>
+</body>
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="../img/TechMi x Guevara.png" alt="Logo del Colegio Guevara">
+        </div>
+        <div class="footer-info">
+            <p>&copy; 2024 Colegio Dr. Ernesto Guevara. Todos los derechos reservados.</p>
+            <p>Tecnicatura en Informática | <a href="#">Política de privacidad</a></p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/cpdeg_tecnica/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/colegioguevara/?locale=es_LA"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://maps.app.goo.gl/trN1HqeEqFVZayp79"><i class="fa-solid fa-location-dot"></i></a>
+            <a href="https://www.youtube.com/@colegioprovincialdrernesto1731"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+</html>

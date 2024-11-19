@@ -1,0 +1,60 @@
+/* Estilos del footer */
+.footer {
+    background-color: #cb14ec; 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra el contenido */
+    align-items: center; /* Centra verticalmente */
+    gap: 20px; /* Espacio entre las secciones del footer */
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-info p {
+    margin: 5px 0; /* Espacio entre líneas */
+    font-size: 0.9rem;
+    color: #d9d9d9;
+}
+
+.footer-info a {
+    color: #ffffff; /* Enlace resaltado */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+    color: #000000; /* Cambia el color al pasar el mouse */
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #520a5c;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #000000;
+    transform: scale(1.2);
+}
+
+/* Responsividad para el footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Diseño vertical en pantallas pequeñas */
+    }
+
+    .footer-logo img {
+        margin-bottom: 10px;
+    }
+}

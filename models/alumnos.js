@@ -5,6 +5,11 @@ class alumnosModelo {
         const colAlumnos = dbClient.db.collection('alumnos');
         return await colAlumnos.insertOne(alumno)
     }
+
+    async getAll() {
+        const colAlumnos = dbClient.db.collection('alumnos');
+        return await colAlumnos.find({}).toArray();
+    }
 }
 
 export default new alumnosModelo;

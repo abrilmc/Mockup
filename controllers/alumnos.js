@@ -32,7 +32,8 @@ class alumnoController {
 
     async getAll(req, res) {
         try {
-            res.status(201).json({ status: 'getAll-ok'});
+            const data = await alumnosModel.getAll();
+            res.status(201).json(data);
         } catch(e) {
             res.status(500).send(e);
         }
